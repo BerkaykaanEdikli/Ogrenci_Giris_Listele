@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<form method="GET" action="Ogrenci/Gonder">
+    <div class="form-group">
+        <label>Okul No</label>
+        <input type="text" name="Id" class="form-control"></input>
+    </div>
+    <div class="form-group">
+        <label>Ad</label>
+        <input type="text" name="Name" class="form-control"></input>
+    </div>
+    <div class="form-group">
+        <label>Soyad</label>
+        <input type="text" name="Surname" class="form-control"></input>
+    </div>
+    <div class="form-group">
+        <label style="margin-right: 10px; margin-top:10px">Sınıflar</label>
+        <select Name="StudentClass">
+            <option>9.Sınıf</option>
+            <option>10.Sınıf</option>
+            <option>11.Sınıf</option>
+            <option>12.Sınıf</option>
+        </select>
+    </div>
+    <div>
+        <label style="margin-right: 10px; margin-top:10px">Şubeler</label>
+        <select Name="StudentsBranch">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary" style="margin-top:10px">Gönder</button>
+    </div>
+</form>

@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<ogrenciBilgi>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Okul Numarası</th>
+            <th scope="col">Adı</th>
+            <th scope="col">Soyadı</th>
+            <th scope="col">Sınıfı</th>
+            <th scope="col">Şubesi</th>
+        </tr>
+    </thead>
+<tbody>
+    @foreach (var Talebe in Model)
+    {
+        <tr>
+            <td>@Talebe.Id</td>
+            <td>@Talebe.Name</td>
+            <td>@Talebe.Surname</td>
+            <td>@Talebe.StudentClass</td>
+            <td>@Talebe.StudentsBranch</td>
+        </tr>
+    }
+</tbody>
+</table>
